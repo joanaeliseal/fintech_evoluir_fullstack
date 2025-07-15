@@ -3,6 +3,7 @@ Estágio em Desenvolvimento Fullstack
 
 ## 📌 Descrição do Desafio
 
+---
 Este projeto foi desenvolvido como parte do processo seletivo para estágio em Desenvolvimento Fullstack na empresa **RPE - Retail Payment Ecossystem S/A**.  
 O objetivo é construir uma aplicação completa, simulando parte do ecossistema de uma fintech, com funcionalidades para **gerenciar clientes, faturas e pagamentos**. O desafio abrange modelagem de banco de dados, criação de API REST e desenvolvimento de uma interface web funcional.
 ---
@@ -15,57 +16,6 @@ O objetivo é construir uma aplicação completa, simulando parte do ecossistema
 - **Outras:** [Swagger, JUnit (pendente), Docker (pendente)]
 ---
 
-## 🗃️ Estrutura do Projeto
-
-FINTECH_EVOLUIR_RPE/
-├── backend/
-│ └── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com.fintech_evoluir.desafio_fintech/
-│ │ │ ├── controller/
-│ │ │ │ ├── ClienteController.java
-│ │ │ │ └── FaturaController.java
-│ │ │ ├── model/
-│ │ │ │ ├── Cliente.java
-│ │ │ │ ├── Fatura.java
-│ │ │ │ ├── StatusBloqueio.java
-│ │ │ │ └── StatusFatura.java
-│ │ │ ├── repository/
-│ │ │ │ ├── ClienteRepository.java
-│ │ │ │ └── FaturaRepository.java
-│ │ │ ├── service/
-│ │ │ │ └── FaturaService.java
-│ │ │ ├── CorsConfig.java
-│ │ │ └── DesafioFintechApplication.java
-│ │ └── resources/
-│ │ ├── static/
-│ │ ├── templates/
-│ │ └── application.properties
-│ └── test/
-├── frontend/
-│ ├── public/
-│ └── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── ClientesList.jsx
-│ │ └── FaturasCliente.jsx
-│ ├── services/
-│ │ └── api.js
-│ ├── styles/
-│ │ └── styles.css
-│ ├── App.jsx
-│ ├── main.jsx
-│ ├── index.html
-│ ├── vite.config.js
-│ ├── eslint.config.js
-│ ├── package.json
-│ └── package-lock.json
-├── scripts_sql/
-│ └── script_fintech.sql
-└── README.md
-
----
 
 ## 1. 📦 Banco de Dados
 
@@ -156,7 +106,6 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/fintech_db
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
----
 ```
 3. Execute o script scripts_sql/script_fintech.sql para popular as tabelas com dados de exemplo.
 
